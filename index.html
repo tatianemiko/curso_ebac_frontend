@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício HTML Js</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>EXERCÍO JQUERY</title>
 </head>
 <body>
     <header>
-        <h1>Formulário</h1>
+        <h1>Lista de tarefas</h1>
     </header>
-    <div class="container">
-        <form id="formulario">
-            <label for="valor-a">Digite um numero para o <b> valor A:</b> <input type="number" id="valor-a" name="valor-a" placeholder="Digite o valor de A" required></label>
-            
-            <label for="valor-b">Digite um numero para o <b>valor B:</b> <input type="number" name="valor-b" id="valor-b" placeholder="Digite o valor de B" required></label>
-            <p class="error-message"></p>
-            <button type="submit">Enter</button>
-        </form>
+    <form action="">
+        <input type="text" id="nome-tarefa" placeholder="Nome da tarefa" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <ul>
+        <li>
+            <button type="submit" class="nota-clicar">nota 1</button>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <button type="submit" class="nota-clicar">nota 2</button> 
+        </li>
+    </ul>
 
-        <p class="sucess-message"></p>
-
-    </div>
-
-    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

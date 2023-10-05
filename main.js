@@ -1,32 +1,19 @@
-const form = document.getElementById('formulario')
-const valorA = document.getElementById('valor-a')
-const valorB = document.getElementById('valor-b')
-/*console.log('oi')*/
-function validaValor(valorA , valorB){
-    const valorValido = valorA < valorB;
-    return valorValido;
-}
+$(document).ready(function(){
+    const notaRealizada = $('.nota-clicar');
+    const notaRiscada = $('<button type="submit" class="nota-clicar" style="text-decoration: line-through;"></button>');//===PARA O TUTOR== 
 
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const menssagemSucesso = `Valor A: <b> ${valorA.value} </b> < Valor B: <b> ${valorB.value} </b>. Parabéns, o valor iserido é valido!`;
-    const menssagemError = `Valor de <b>B</b> deve ser maior que valor de <b>A</b>`;
-
-    /*console.log(typeof valorA.value)*/
-    if (!validaValor(parseInt(valorA.value) , parseInt(valorB.value))){
-        const containerMenssagemError = document.querySelector('.error-message');
-        containerMenssagemError.innerHTML = menssagemError
-        containerMenssagemError.style.display = 'block';
-        valorB.style.border = '1px solid red';
-    } else {
-        containerMenssagemSucesso = document.querySelector('.sucess-message');
-        containerMenssagemSucesso.innerHTML = menssagemSucesso
-        containerMenssagemSucesso.style.display = 'block';
-
-        valorA.value = '';
-        valorB.value = '';
-    }
-})
-
-
+    $('form').on('submit', function(e){
+        e.preventDefault();
+        
+        const inputNomeTarefa = $('#nome-tarefa').val();
+        const novaTarefa = $('<li> </li>');
+        
+        $(inputNomeTarefa).appendTo(novaTarefa);//===PARA O TUTOR== aqui eu coloquei assim, mas também não esta funcionando, o valores inserido no input não está indo para a novaTrefa
+    })
+    
+    //===PARA O TUTOR== aqui eu pensei em quando clicarem na lista o estilo ser aplicado como está na linha 3, a função de clicar esta rodando, porém o estilo não, então acho que deve estar errado a parte do estilo no "notaRiscada".. como seria uma boa maneira de aplica-lo? Minha linha de pensamento tá muito errada? sempre fico na dúvida kkkkk
+    $(notaRealizada).click(function(){
+            alert("oi")
+            $(notaRiscada);
+        }) 
+});

@@ -1,70 +1,53 @@
 *{
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-body  {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(201, 240, 200);
-    width: 500px;
-    margin: auto;
-    margin-top: 30px ;
+body {
+    background-color: lightgray;
+    align-content: center;
 }
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 0px;
-    padding-left: 16px;
+header h1{
+    /*background-color: aqua;*/
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 30px;
 }
 
 form {
-    padding: 16px;
-    padding-bottom: 0px;
+    text-align: center;
 }
 
-input, button {
-    
-    display: block;
-    margin: 6px auto 16px 0px;
-    padding: 10px;
-    width: 100%;
+input,button {
+    /*background-color: blueviolet;*/
+    padding: 8px;
     border: 1px solid grey;
-    border-style: line;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 button {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    font-size: larger;
-    background-color: green;
+    background-color: rgb(151, 138, 138) ;
+    font-weight: bold;
     color: white;
-    border: 1px solid green;
-    margin-bottom: 10px;
-}
-
-button:hover {
-    background-color: rgb(10, 80, 10);
     cursor: pointer;
 }
 
-.sucess-message {
-    color: green;
-    border: 1px solid green;
-    padding: 10px;
-    width: 466px;
-    margin-top: 0px;
-    margin: auto;
-    display: none;
-    }
+ul , li {
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
 
-.error-message {
-    color:white;
-    font-size: small;
-    background-color: red;
-    padding: 10px;
-    width: 100%;
-    margin-top: -10px;
-    margin-bottom: 16px;
-    display: none;
+.nota-clicar {
+    background-color: lightgray;
+    border: none;
+    font-weight: normal;
+    color: black;
+    padding: 0;
+    margin: 0;
 }
