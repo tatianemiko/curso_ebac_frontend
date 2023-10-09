@@ -43,11 +43,13 @@ ul , li {
     
 }
 
-.nota-clicar {
+.riscado {
+    text-decoration: line-through;
     background-color: lightgray;
     border: none;
     font-weight: normal;
     color: black;
     padding: 0;
     margin: 0;
+    cursor: pointer;
 }
